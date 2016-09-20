@@ -1,0 +1,26 @@
+{
+  "name": "ckeditor",
+  "description": "CKEditor for Nette Framework",
+  "main": [
+    "client-side/init.js"
+  ],
+  "dependencies": {
+    "jquery": ">1.8",
+    "ckeditor": "*",
+    "widgetcommon": "http://download.ckeditor.com/widgetcommon/releases/widgetcommon_1.0.zip",
+    "ckeditor-office2013-skin": "*"
+  },
+  "authors": [
+    "Michal Landsman https://github.com/studioartcz"
+  ],
+  "ignore": [
+    "src",
+    "composer.json"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "ckeditor",
+    "wysiwyg",
+    "nette"
+  ]
+}

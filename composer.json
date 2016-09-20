@@ -1,0 +1,20 @@
+{
+  "name": "studioartcz/ckeditor",
+  "description": "CKEditor for Nette Framework",
+  "homepage": "https://github.com/studioartcz/ckeditor",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Michal Landsman",
+      "homepage": "http://www.studioart.cz"
+    }
+  ],
+  "require": {
+    "php": ">= 5.6.0",
+    "nette/di": ">= 2.3.0"
+  },
+  "autoload": {
+    "classmap": ["src/"]
+  }
+}
+
