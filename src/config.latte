@@ -1,0 +1,46 @@
+{block config}
+    {default $config->lang_default = 'cs'}
+    {default $config->lang = 'cs'}
+    {default $config->height = '400'}
+    {default $config->skin = 'office2013'}
+    {default $config->filebrowserBrowseUrl = '$this->fman'}
+
+    <script type='text/javascript'>
+    /* <![CDATA[ */
+    $(document).ready(function()
+    {
+        var _c = CKEDITOR.config;
+
+        _c.language = 'cs';
+        _c.defaultLanguage = '{$config->lang_default}';
+        _c.baseHref = '/';
+        _c.height = '{$config->height}';
+        _c.ignoreEmptyParagraph = true;
+        _c.entities = false;
+        _c.allowedContent = true;
+        _c.forcePasteAsPlainText = true;
+        _c.format_tags = 'h2;h3;pre;div,block';
+        _c.format_block = {
+            name: 'Blok - modrý',
+            element: 'div',
+            attributes: {
+                'class': 'normalPara'
+            }
+        };
+
+        _c.extraPlugins = 'image2,widget,widgetcommon,dialogui'; // oembed
+        _c.removePlugins = 'colorbutton';
+
+        _c.skin = '{$config->skin}';
+
+        _c.filebrowserBrowseUrl = '{$config->fman}';
+        _c.filebrowserImageBrowseUrl = '{$config->fman}';
+        _c.filebrowserFlashBrowseUrl = '{$config->fman}';
+        _c.filebrowserUploadUrl = '{$config->fman}';
+        _c.filebrowserImageUploadUrl = '{$config->fman}';
+        _c.filebrowserFlashUploadUrl = '{$config->fman}';
+
+    });
+
+    /* ]]> */</script>
+{/block}

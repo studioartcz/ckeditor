@@ -1,0 +1,11 @@
+.cke_chrome {
+    box-shadow: none!important;
+    border: 1px solid #eee!important;
+    overflow: hidden;
+}
+.cke_bottom {
+    background: #edf0f0!important;
+}
+.cke_path_item, .cke_path_empty {
+    color: gray!important;
+}

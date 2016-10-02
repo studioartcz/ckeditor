@@ -23,20 +23,7 @@ class CKEditor {
     public function init()
     {
         $editor = "
-        <script src='{$this->editorPath}/ckeditor.js'></script>
-        <style>
-            .cke_chrome {
-                box-shadow: none!important;
-                border: 1px solid #eee!important;
-                overflow: hidden;
-            }
-            .cke_bottom {
-                background: #edf0f0!important;
-            }
-            .cke_path_item, .cke_path_empty {
-                color: gray!important;
-            }
-        </style>";
+        <script src='{$this->editorPath}/ckeditor.js'></script>";
 
         return $editor;
     }
@@ -45,17 +32,6 @@ class CKEditor {
     {
         $editor="
         <script type='text/javascript'>
-        
-        function _x(STR_XPATH) {
-            var xresult = document.evaluate(STR_XPATH, document, null, XPathResult.ANY_TYPE, null);
-            var xnodes = [];
-            var xres;
-            while (xres = xresult.iterateNext()) {
-                xnodes.push(xres);
-            }
-
-            return xnodes;
-        }
         
         /* <![CDATA[ */
         $(document).ready(function(){

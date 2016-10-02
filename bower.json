@@ -1,14 +1,15 @@
 {
   "name": "ckeditor",
-  "description": "CKEditor for Nette Framework",
+  "description": "CKEditor wysiwyg with elFinder file manager for Nette Framework",
   "main": [
     "client-side/init.js"
   ],
   "dependencies": {
     "jquery": ">1.8",
-    "ckeditor": "*",
+    "ckeditor": "^4.5.11",
     "widgetcommon": "http://download.ckeditor.com/widgetcommon/releases/widgetcommon_1.0.zip",
-    "ckeditor-office2013-skin": "*"
+    "ckeditor-office2013-skin": "*",
+    "jquery-ui": "^1.12.1"
   },
   "authors": [
     "Michal Landsman https://github.com/studioartcz"
@@ -21,6 +22,10 @@
   "keywords": [
     "ckeditor",
     "wysiwyg",
-    "nette"
+    "nette",
+    "elfinder",
+    "fman",
+    "studioart",
+    "landsman"
   ]
 }
